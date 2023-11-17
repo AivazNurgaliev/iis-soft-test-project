@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<employees>
+    <employee>
+        <depCode>HR</depCode>
+        <depJob>Manager</depJob>
+        <description>Hiring manager</description>
+    </employee>
+    <employee>
+        <depCode>IT</depCode>
+        <depJob>Developer</depJob>
+        <description>Software development and support</description>
+    </employee>
+    <employee>
+        <depCode>IT</depCode>
+        <depJob>Analyst</depJob>
+        <description>Data analytics</description>
+    </employee>
+    <employee>
+        <depCode>MK</depCode>
+        <depJob>Designer</depJob>
+        <description>Design development</description>
+    </employee>
+    <employee>
+        <depCode>MK</depCode>
+        <depJob>Copywriter</depJob>
+        <description>Content writing</description>
+    </employee>
+    <employee>
+        <depCode>FN</depCode>
+        <depJob>Accountant</depJob>
+        <description>Auditing and accounting</description>
+    </employee>
+    <employee>
+        <depCode>PR</depCode>
+        <depJob>Engineer</depJob>
+        <description>New product development and testing</description>
+    </employee>
+    <employee>
+        <depCode>PR</depCode>
+        <depJob>Technician</depJob>
+        <description>Assisting the engineer</description>
+    </employee>
+    <employee>
+        <depCode>AD</depCode>
+        <depJob>Receptionist</depJob>
+        <description>Reception</description>
+    </employee>
+    <employee>
+        <depCode>IT</depCode>
+        <depJob>Tester</depJob>
+        <description/>
+    </employee>
+    <employee>
+        <depCode>IT</depCode>
+        <depJob>System Administrator</depJob>
+        <description>System administration tasks</description>
+    </employee>
+</employees>
