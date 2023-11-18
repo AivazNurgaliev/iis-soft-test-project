@@ -1,58 +1,49 @@
 package com.iissoft.assignment.app;
 
-import com.iissoft.assignment.app.model.Employee;
-import com.iissoft.assignment.app.model.EmployeeDto;
-import com.iissoft.assignment.app.model.NaturalKey;
-import com.iissoft.assignment.app.service.TestClazz;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.iissoft.assignment.app.service.impl.EtlServiceImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.TransformerException;
-import java.util.List;
-import java.util.Map;
 
 @SpringBootApplication
 @RestController
 public class IisSoftApplication {
-	private final TestClazz test;
+	private final EtlServiceImpl etlService1;
 
-	@Autowired
-	public IisSoftApplication(TestClazz test) {
-		this.test = test;
+
+	public IisSoftApplication(EtlServiceImpl etlService1) {
+		this.etlService1 = etlService1;
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(IisSoftApplication.class, args);
+		//SpringApplication.run(IisSoftApplication.class, args);
+
+		ApplicationContext context = SpringApplication.run(IisSoftApplication.class, args);
+
+		if (args.length > 1 && args[0].equals("upload")) {
+			EtlServiceImpl etlService = context.getBean(EtlServiceImpl.class);
+			etlService.performDataUploadToXml(args[1]);
+			System.exit(0);
+		}
+
+		if (args.length > 1 && args[0].equals("sync")) {
+			EtlServiceImpl etlService = context.getBean(EtlServiceImpl.class);
+			etlService.performSyncOperation(args[1]);
+			System.exit(0);
+		}
 	}
 
-	@GetMapping("/test")
+	@GetMapping("/sync")
 	public void test() {
-		test.sh();
-	}
-
-	@GetMapping("/read")
-	public List<EmployeeDto> readFromDb() {
-		return test.test();
-	}
-
-	@GetMapping("/write")
-	public void writeToXml() throws ParserConfigurationException, TransformerException {
-		test.writeToXml();
-	}
-
-	@GetMapping("/xml/read")
-	public List<EmployeeDto> readFromXml() throws ParserConfigurationException, TransformerException {
-		return test.readFromXml();
+		etlService1.performSyncOperation("test3.xml");
 	}
 
 
-	@GetMapping("/process")
-	public Map<NaturalKey, EmployeeDto> process() {
-		return test.process();
+	@GetMapping("/uploadToXml")
+	public void writeToXml() {
+		etlService1.performDataUploadToXml("employeese.xml");
 	}
 
 }

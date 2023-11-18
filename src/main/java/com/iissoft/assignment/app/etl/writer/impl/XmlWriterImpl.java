@@ -3,6 +3,8 @@ package com.iissoft.assignment.app.etl.writer.impl;
 import com.iissoft.assignment.app.etl.writer.XmlWriter;
 import com.iissoft.assignment.app.model.Employee;
 import com.iissoft.assignment.app.model.EmployeeDto;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -16,11 +18,16 @@ import javax.xml.transform.stream.StreamResult;
 import java.io.OutputStream;
 import java.util.List;
 
+/**
+ * Имплементация интерфейса XmlWriter, документация находится в интерфейсе
+ */
 @Component
 public class XmlWriterImpl implements XmlWriter {
+    private static final Logger logger = LoggerFactory.getLogger(XmlWriterImpl.class);
     @Override
     public void write(List<EmployeeDto> employees, OutputStream output)
             throws TransformerException, ParserConfigurationException {
+        logger.info("Starting writing to xml file");
         Document doc = generateDomDocument(employees);
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         Transformer transformer = transformerFactory.newTransformer();
@@ -31,6 +38,8 @@ public class XmlWriterImpl implements XmlWriter {
         StreamResult result = new StreamResult(output);
 
         transformer.transform(source, result);
+
+        logger.info("Successfully wrote to xml file");
     }
 
     @Override

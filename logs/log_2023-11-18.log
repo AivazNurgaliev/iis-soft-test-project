@@ -1,0 +1,551 @@
+629  [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 15020 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+631  [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+1713 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.421 seconds (process running for 2.12)
+6161 [http-nio-8080-exec-3] INFO  c.i.a.app.service.TestClazz - readFromXml
+6172 [http-nio-8080-exec-3] INFO  c.i.a.app.service.TestClazz - readFromXml end
+656  [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 12032 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+663  [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+1760 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.462 seconds (process running for 2.126)
+6625 [http-nio-8080-exec-2] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+6625 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: employeese.xml
+6641 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Successfully read from xml file: employeese.xml
+6642 [http-nio-8080-exec-2] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Starting processing info from xml
+6642 [http-nio-8080-exec-2] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Successfully processed info from xml
+6643 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+6838 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+6854 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+6854 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+6855 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully read from db
+6918 [http-nio-8080-exec-2] INFO  c.i.a.app.service.EtlService - Successfully performed sync operation
+15:02:01.279 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 12140 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+15:02:01.283 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+15:02:02.430 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.483 seconds (process running for 2.135)
+15:02:04.836 [http-nio-8080-exec-1] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+15:02:04.837 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: employeese.xml
+15:02:04.845 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Successfully read from xml file: employeese.xml
+15:02:04.845 [http-nio-8080-exec-1] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Starting processing info from xml
+15:02:04.846 [http-nio-8080-exec-1] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Successfully processed info from xml
+15:02:04.846 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+15:02:04.982 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+15:02:04.996 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+15:02:04.997 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+15:02:04.997 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully read from db
+15:02:05.056 [http-nio-8080-exec-1] INFO  c.i.a.app.service.EtlService - Successfully performed sync operation
+15:05:36.377 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 10588 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+15:05:36.379 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+15:05:37.451 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.425 seconds (process running for 2.181)
+15:05:46.288 [http-nio-8080-exec-2] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+15:05:46.288 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: employeese.xml
+15:05:46.298 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Successfully read from xml file: employeese.xml
+15:05:46.298 [http-nio-8080-exec-2] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Starting processing info from xml
+15:05:46.299 [http-nio-8080-exec-2] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Successfully processed info from xml
+15:05:46.299 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+15:05:46.299 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
+15:05:46.435 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+15:05:46.449 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+15:05:46.450 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+15:05:46.450 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully read from db
+15:05:46.450 [http-nio-8080-exec-2] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Opening the connection to DB
+15:05:46.510 [http-nio-8080-exec-2] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully opened the connection to DB
+15:05:46.510 [http-nio-8080-exec-2] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - writing to db...
+15:05:46.510 [http-nio-8080-exec-2] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully wrote to db and committed transaction
+15:05:46.510 [http-nio-8080-exec-2] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Closing the connection to DB...
+15:05:46.510 [http-nio-8080-exec-2] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully closed the connection to DB
+15:05:46.510 [http-nio-8080-exec-2] INFO  c.i.a.app.service.EtlService - Successfully performed sync operation
+15:06:36.815 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 20780 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+15:06:36.817 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+15:06:37.976 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.475 seconds (process running for 2.121)
+15:06:39.373 [http-nio-8080-exec-2] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+15:06:39.373 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: employeese.xml
+15:06:39.402 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Successfully read from xml file: employeese.xml
+15:06:39.402 [http-nio-8080-exec-2] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Starting processing info from xml
+15:06:39.403 [http-nio-8080-exec-2] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Successfully processed info from xml
+15:06:39.404 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+15:06:39.404 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
+15:06:39.569 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+15:06:39.585 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+15:06:39.586 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+15:06:39.586 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully read from db
+15:06:39.586 [http-nio-8080-exec-2] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Opening the connection to DB
+15:06:39.644 [http-nio-8080-exec-2] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully opened the connection to DB
+15:06:39.644 [http-nio-8080-exec-2] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - writing to db...
+15:06:39.645 [http-nio-8080-exec-2] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Transaction is being rolled back
+15:06:39.646 [http-nio-8080-exec-2] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Closing the connection to DB...
+15:06:39.646 [http-nio-8080-exec-2] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully closed the connection to DB
+15:07:46.274 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 10204 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+15:07:46.277 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+15:07:47.409 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.453 seconds (process running for 2.111)
+15:07:50.119 [http-nio-8080-exec-3] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+15:07:50.119 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: employeese.xml
+15:07:50.130 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Successfully read from xml file: employeese.xml
+15:07:50.130 [http-nio-8080-exec-3] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Starting processing info from xml
+15:07:50.131 [http-nio-8080-exec-3] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Successfully processed info from xml
+15:07:50.131 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+15:07:50.131 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
+15:07:50.265 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+15:07:50.278 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+15:07:50.279 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+15:07:50.279 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully read from db
+15:07:50.279 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Opening the connection to DB
+15:07:50.333 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully opened the connection to DB
+15:07:50.333 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - writing to db...
+15:07:50.334 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Transaction is being rolled back
+15:07:50.334 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Failed to write to db
+15:07:50.334 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Closing the connection to DB...
+15:07:50.334 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully closed the connection to DB
+15:09:50.600 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 10172 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+15:09:50.602 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+15:09:51.733 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.478 seconds (process running for 2.134)
+15:09:54.092 [http-nio-8080-exec-3] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+15:09:54.093 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: employeese.xml
+15:09:54.101 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Successfully read from xml file: employeese.xml
+15:09:54.101 [http-nio-8080-exec-3] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Starting processing info from xml
+15:09:54.102 [http-nio-8080-exec-3] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Successfully processed info from xml
+15:09:54.102 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+15:09:54.102 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
+15:09:54.235 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+15:09:54.249 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+15:09:54.250 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+15:09:54.250 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully read from db
+15:09:54.250 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Opening the connection to DB
+15:09:54.304 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully opened the connection to DB
+15:09:54.305 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - writing to db...
+15:09:54.305 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Transaction is being rolled back
+15:09:54.305 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Failed to write to db
+15:09:54.305 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Closing the connection to DB...
+15:09:54.305 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully closed the connection to DB
+15:10:37.985 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 13900 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+15:10:37.988 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+15:10:39.087 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.448 seconds (process running for 2.1)
+15:10:41.851 [http-nio-8080-exec-3] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+15:10:41.851 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: employeese.xml
+15:10:41.866 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Successfully read from xml file: employeese.xml
+15:10:41.866 [http-nio-8080-exec-3] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Starting processing info from xml
+15:10:41.873 [http-nio-8080-exec-3] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Successfully processed info from xml
+15:10:41.875 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+15:10:41.877 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
+15:10:42.082 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+15:10:42.103 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+15:10:42.104 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+15:10:42.105 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully read from db
+15:10:42.105 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Opening the connection to DB
+15:10:42.167 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully opened the connection to DB
+15:10:42.167 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - writing to db...
+15:10:42.167 [http-nio-8080-exec-3] ERROR c.i.a.a.e.writer.impl.DbWriterImpl - Something went wrong
+15:10:42.167 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Transaction is being rolled back
+15:10:42.167 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Failed to write to db
+15:10:42.167 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Closing the connection to DB...
+15:10:42.168 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully closed the connection to DB
+15:13:20.080 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 17456 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+15:13:20.082 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+15:13:21.172 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.408 seconds (process running for 2.056)
+15:13:23.211 [http-nio-8080-exec-2] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+15:13:23.212 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: employeese.xml
+15:13:23.223 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Successfully read from xml file: employeese.xml
+15:13:23.223 [http-nio-8080-exec-2] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Starting processing info from xml
+15:13:23.224 [http-nio-8080-exec-2] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Successfully processed info from xml
+15:13:23.224 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+15:13:23.224 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
+15:13:23.362 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+15:13:23.387 [http-nio-8080-exec-2] ERROR c.i.a.a.e.reader.impl.DbReaderImpl - Failed to read from the result set
+15:13:23.388 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+15:13:23.388 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+15:14:34.352 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 4832 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+15:14:34.355 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+15:14:35.439 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.429 seconds (process running for 2.115)
+15:14:38.857 [http-nio-8080-exec-2] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+15:14:38.857 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: employeese.xml
+15:14:38.866 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Successfully read from xml file: employeese.xml
+15:14:38.866 [http-nio-8080-exec-2] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Starting processing info from xml
+15:14:38.866 [http-nio-8080-exec-2] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Successfully processed info from xml
+15:14:38.866 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+15:14:38.866 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
+15:14:39.004 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+15:14:39.016 [http-nio-8080-exec-2] ERROR c.i.a.a.e.reader.impl.DbReaderImpl - Failed to read from the result set
+org.postgresql.util.PSQLException: ОШИБКА: ошибка синтаксиса (примерное положение: "selects")
+  Позиция: 1
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134)
+	at com.iissoft.assignment.app.etl.reader.impl.DbReaderImpl.read(DbReaderImpl.java:50)
+	at com.iissoft.assignment.app.service.EtlService.performSyncOperation(EtlService.java:49)
+	at com.iissoft.assignment.app.IisSoftApplication.test(IisSoftApplication.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+15:14:39.020 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+15:14:39.020 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+15:15:18.550 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 8960 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+15:15:18.553 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+15:15:19.612 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.389 seconds (process running for 2.023)
+15:15:26.596 [http-nio-8080-exec-4] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+15:15:26.597 [http-nio-8080-exec-4] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: employeese.xml
+15:15:26.607 [http-nio-8080-exec-4] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Successfully read from xml file: employeese.xml
+15:15:26.607 [http-nio-8080-exec-4] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Starting processing info from xml
+15:15:26.608 [http-nio-8080-exec-4] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Successfully processed info from xml
+15:15:26.608 [http-nio-8080-exec-4] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+15:15:26.608 [http-nio-8080-exec-4] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
+15:15:26.749 [http-nio-8080-exec-4] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+15:15:26.760 [http-nio-8080-exec-4] ERROR c.i.a.a.e.reader.impl.DbReaderImpl - Failed to read from the result set
+org.postgresql.util.PSQLException: ОШИБКА: ошибка синтаксиса (примерное положение: "selects")
+  Позиция: 1
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2713)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2401)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:368)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:134)
+	at com.iissoft.assignment.app.etl.reader.impl.DbReaderImpl.read(DbReaderImpl.java:50)
+	at com.iissoft.assignment.app.service.EtlService.performSyncOperation(EtlService.java:49)
+	at com.iissoft.assignment.app.IisSoftApplication.test(IisSoftApplication.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+15:15:26.764 [http-nio-8080-exec-4] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+15:15:26.765 [http-nio-8080-exec-4] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+15:16:24.620 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 12680 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+15:16:24.622 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+15:16:25.716 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.418 seconds (process running for 2.08)
+15:16:28.404 [http-nio-8080-exec-2] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+15:16:28.404 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: employeese.xml
+15:16:28.413 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Successfully read from xml file: employeese.xml
+15:16:28.413 [http-nio-8080-exec-2] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Starting processing info from xml
+15:16:28.414 [http-nio-8080-exec-2] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Successfully processed info from xml
+15:16:28.414 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+15:16:28.414 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
+15:16:28.555 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+15:16:28.568 [http-nio-8080-exec-2] ERROR c.i.a.a.e.reader.impl.DbReaderImpl - Failed to read from the result set
+15:16:28.568 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+15:16:28.568 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+15:17:33.698 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 23572 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+15:17:33.701 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+15:17:34.803 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.433 seconds (process running for 2.061)
+15:17:37.490 [http-nio-8080-exec-2] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+15:17:37.490 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: employeese.xml
+15:17:37.499 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Successfully read from xml file: employeese.xml
+15:17:37.500 [http-nio-8080-exec-2] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Starting processing info from xml
+15:17:37.500 [http-nio-8080-exec-2] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Successfully processed info from xml
+15:17:37.501 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+15:17:37.501 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
+15:17:37.638 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+15:17:37.651 [http-nio-8080-exec-2] ERROR c.i.a.a.e.reader.impl.DbReaderImpl - Failed to read from the result set
+15:17:37.651 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+15:17:37.651 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+15:26:25.273 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 5212 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+15:26:25.275 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+15:26:26.632 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.804 seconds (process running for 2.572)
+15:26:49.161 [http-nio-8080-exec-1] INFO  c.i.a.app.service.EtlService - Performing data upload to xml: employeese.xml
+15:26:49.162 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+15:26:49.162 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
+15:26:49.297 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+15:26:49.308 [http-nio-8080-exec-1] ERROR c.i.a.a.e.reader.impl.DbReaderImpl - Failed to read from the result set
+15:26:49.309 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+15:26:49.309 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+15:27:21.981 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 23120 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+15:27:21.984 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+15:27:23.086 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.447 seconds (process running for 2.134)
+15:27:31.600 [http-nio-8080-exec-2] INFO  c.i.a.app.service.EtlService - Performing data upload to xml: employeese.xml
+15:27:31.601 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+15:27:31.601 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
+15:27:31.738 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+15:27:31.753 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+15:27:31.753 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+15:27:31.753 [http-nio-8080-exec-2] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully read from db
+15:27:31.753 [http-nio-8080-exec-2] INFO  c.i.a.a.e.writer.impl.XmlWriterImpl - Starting writing to xml file
+15:27:31.803 [http-nio-8080-exec-2] INFO  c.i.a.a.e.writer.impl.XmlWriterImpl - Successfully wrote to xml file
+15:27:31.803 [http-nio-8080-exec-2] INFO  c.i.a.app.service.EtlService - Successfully performed data upload to xml
+15:27:44.421 [http-nio-8080-exec-3] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+15:27:44.422 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: employeese.xml
+15:27:44.431 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Successfully read from xml file: employeese.xml
+15:27:44.432 [http-nio-8080-exec-3] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Starting processing info from xml
+15:27:44.433 [http-nio-8080-exec-3] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Successfully processed info from xml
+15:27:44.433 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+15:27:44.433 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
+15:27:44.548 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+15:27:44.551 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+15:27:44.552 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+15:27:44.552 [http-nio-8080-exec-3] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully read from db
+15:27:44.552 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Opening the connection to DB
+15:27:44.608 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully opened the connection to DB
+15:27:44.609 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - writing to db...
+15:27:44.609 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully wrote to db and committed transaction
+15:27:44.609 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Closing the connection to DB...
+15:27:44.609 [http-nio-8080-exec-3] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully closed the connection to DB
+15:27:44.609 [http-nio-8080-exec-3] INFO  c.i.a.app.service.EtlService - Successfully performed sync operation
+15:32:59.517 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 3836 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+15:32:59.520 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+15:33:00.678 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.487 seconds (process running for 2.119)
+15:33:12.530 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 9528 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+15:33:12.532 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+15:33:13.658 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.452 seconds (process running for 2.142)
+15:33:27.317 [http-nio-8080-exec-1] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+15:33:27.317 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: employeese.xml
+15:33:27.325 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Successfully read from xml file: employeese.xml
+15:33:27.325 [http-nio-8080-exec-1] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Starting processing info from xml
+15:33:27.326 [http-nio-8080-exec-1] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Successfully processed info from xml
+15:33:27.326 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+15:33:27.326 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
+15:33:27.458 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+15:33:27.472 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+15:33:27.472 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+15:33:27.472 [http-nio-8080-exec-1] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully read from db
+15:33:27.473 [http-nio-8080-exec-1] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Opening the connection to DB
+15:33:27.529 [http-nio-8080-exec-1] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully opened the connection to DB
+15:33:27.530 [http-nio-8080-exec-1] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Writing to db...
+15:33:27.530 [http-nio-8080-exec-1] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully wrote to db and committed transaction
+15:33:27.530 [http-nio-8080-exec-1] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Closing the connection to DB...
+15:33:27.530 [http-nio-8080-exec-1] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully closed the connection to DB
+15:33:27.530 [http-nio-8080-exec-1] INFO  c.i.a.app.service.EtlService - Successfully performed sync operation
+15:48:34.840 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 25308 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+15:48:34.843 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+15:48:35.948 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.426 seconds (process running for 2.132)
+15:52:46.487 [main] INFO  c.i.a.app.IisSoftApplicationTests - Starting IisSoftApplicationTests using Java 17.0.9 with PID 9616 (started by reald in D:\IdeaProjects\app)
+15:52:46.488 [main] INFO  c.i.a.app.IisSoftApplicationTests - No active profile set, falling back to 1 default profile: "default"
+15:52:47.758 [main] INFO  c.i.a.app.IisSoftApplicationTests - Started IisSoftApplicationTests in 1.508 seconds (process running for 2.698)
+15:55:52.623 [main] INFO  c.i.a.app.IisSoftApplicationTests - Starting IisSoftApplicationTests using Java 17.0.9 with PID 19664 (started by reald in D:\IdeaProjects\app)
+15:55:52.625 [main] INFO  c.i.a.app.IisSoftApplicationTests - No active profile set, falling back to 1 default profile: "default"
+15:55:53.828 [main] INFO  c.i.a.app.IisSoftApplicationTests - Started IisSoftApplicationTests in 1.612 seconds (process running for 3.577)
+15:56:23.867 [main] INFO  c.i.a.app.IisSoftApplicationTests - Starting IisSoftApplicationTests using Java 17.0.9 with PID 7744 (started by reald in D:\IdeaProjects\app)
+15:56:23.868 [main] INFO  c.i.a.app.IisSoftApplicationTests - No active profile set, falling back to 1 default profile: "default"
+15:56:25.049 [main] INFO  c.i.a.app.IisSoftApplicationTests - Started IisSoftApplicationTests in 1.401 seconds (process running for 2.538)
+16:04:43.646 [main] INFO  c.i.a.app.IisSoftApplicationTests - Starting IisSoftApplicationTests using Java 17.0.9 with PID 22760 (started by reald in D:\IdeaProjects\app)
+16:04:43.647 [main] INFO  c.i.a.app.IisSoftApplicationTests - No active profile set, falling back to 1 default profile: "default"
+16:04:44.873 [main] INFO  c.i.a.app.IisSoftApplicationTests - Started IisSoftApplicationTests in 1.496 seconds (process running for 2.637)
+16:15:41.528 [main] INFO  c.i.a.app.IisSoftApplicationTests - Starting IisSoftApplicationTests using Java 17.0.9 with PID 7328 (started by reald in D:\IdeaProjects\app)
+16:15:41.529 [main] INFO  c.i.a.app.IisSoftApplicationTests - No active profile set, falling back to 1 default profile: "default"
+16:15:42.886 [main] INFO  c.i.a.app.IisSoftApplicationTests - Started IisSoftApplicationTests in 1.61 seconds (process running for 2.967)
+16:16:21.650 [main] INFO  c.i.a.app.IisSoftApplicationTests - Starting IisSoftApplicationTests using Java 17.0.9 with PID 1720 (started by reald in D:\IdeaProjects\app)
+16:16:21.651 [main] INFO  c.i.a.app.IisSoftApplicationTests - No active profile set, falling back to 1 default profile: "default"
+16:16:22.830 [main] INFO  c.i.a.app.IisSoftApplicationTests - Started IisSoftApplicationTests in 1.401 seconds (process running for 2.549)
+16:17:46.972 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 12888 (D:\IdeaProjects\app\target\app-0.0.1-SNAPSHOT.jar started by reald in D:\IdeaProjects\app)
+16:17:46.976 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:17:48.702 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 2.189 seconds (process running for 2.928)
+16:17:48.724 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 12888 (D:\IdeaProjects\app\target\app-0.0.1-SNAPSHOT.jar started by reald in D:\IdeaProjects\app)
+16:17:48.724 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:18:44.458 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 960 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+16:18:44.461 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:18:58.998 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 13688 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+16:18:59.001 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:20:08.805 [main] INFO  c.i.a.app.IisSoftApplicationTests - Starting IisSoftApplicationTests using Java 17.0.9 with PID 4708 (started by reald in D:\IdeaProjects\app)
+16:20:08.806 [main] INFO  c.i.a.app.IisSoftApplicationTests - No active profile set, falling back to 1 default profile: "default"
+16:20:10.205 [main] INFO  c.i.a.app.IisSoftApplicationTests - Started IisSoftApplicationTests in 1.621 seconds (process running for 2.898)
+16:20:19.356 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 13572 (D:\IdeaProjects\app\target\app-0.0.1-SNAPSHOT.jar started by reald in D:\IdeaProjects\app)
+16:20:19.359 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:20:20.995 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 2.045 seconds (process running for 2.757)
+16:20:21.020 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 13572 (D:\IdeaProjects\app\target\app-0.0.1-SNAPSHOT.jar started by reald in D:\IdeaProjects\app)
+16:20:21.020 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:21:30.398 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 6264 (D:\IdeaProjects\app\target\app-0.0.1-SNAPSHOT.jar started by reald in D:\IdeaProjects\app)
+16:21:30.401 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:25:35.007 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 5860 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+16:25:35.010 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:25:36.263 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.592 seconds (process running for 2.394)
+16:25:36.279 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 5860 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+16:25:36.279 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:26:46.797 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 4280 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+16:26:46.799 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:26:47.884 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.399 seconds (process running for 2.074)
+16:29:43.093 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 9172 (D:\IdeaProjects\app\target\app-0.0.1-SNAPSHOT.jar started by reald in D:\IdeaProjects\app)
+16:29:43.098 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:29:45.216 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 2.685 seconds (process running for 3.613)
+16:29:45.248 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 9172 (D:\IdeaProjects\app\target\app-0.0.1-SNAPSHOT.jar started by reald in D:\IdeaProjects\app)
+16:29:45.248 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:30:21.284 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 3248 (D:\IdeaProjects\app\target\app-0.0.1-SNAPSHOT.jar started by reald in D:\IdeaProjects\app)
+16:30:21.287 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:30:22.990 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 2.144 seconds (process running for 2.874)
+16:30:23.012 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 3248 (D:\IdeaProjects\app\target\app-0.0.1-SNAPSHOT.jar started by reald in D:\IdeaProjects\app)
+16:30:23.013 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:37:22.507 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 16152 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+16:37:22.511 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:37:23.757 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.607 seconds (process running for 2.392)
+16:38:22.798 [main] INFO  c.i.a.app.IisSoftApplicationTests - Starting IisSoftApplicationTests using Java 17.0.9 with PID 11052 (started by reald in D:\IdeaProjects\app)
+16:38:22.799 [main] INFO  c.i.a.app.IisSoftApplicationTests - No active profile set, falling back to 1 default profile: "default"
+16:38:24.045 [main] INFO  c.i.a.app.IisSoftApplicationTests - Started IisSoftApplicationTests in 1.483 seconds (process running for 2.856)
+16:38:38.489 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 1972 (D:\IdeaProjects\app\target\app-0.0.1-SNAPSHOT.jar started by reald in D:\IdeaProjects\app)
+16:38:38.494 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:38:40.285 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 2.304 seconds (process running for 3.036)
+16:38:40.289 [main] INFO  c.i.a.app.service.EtlService - Performing data upload to xml: test3.xml
+16:38:40.289 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+16:38:40.289 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
+16:38:40.525 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+16:38:40.568 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+16:38:40.569 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+16:38:40.570 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully read from db
+16:38:40.571 [main] INFO  c.i.a.a.e.writer.impl.XmlWriterImpl - Starting writing to xml file
+16:38:40.655 [main] INFO  c.i.a.a.e.writer.impl.XmlWriterImpl - Successfully wrote to xml file
+16:38:40.655 [main] INFO  c.i.a.app.service.EtlService - Successfully performed data upload to xml
+16:39:46.455 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 14812 (D:\IdeaProjects\app\target\app-0.0.1-SNAPSHOT.jar started by reald in D:\IdeaProjects\app)
+16:39:46.460 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:39:48.205 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 2.194 seconds (process running for 2.91)
+16:39:48.210 [main] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+16:39:48.210 [main] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: test3.xml
+16:39:48.226 [main] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Successfully read from xml file: test3.xml
+16:39:48.227 [main] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Starting processing info from xml
+16:39:48.228 [main] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Successfully processed info from xml
+16:39:48.228 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+16:39:48.228 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
+16:39:48.435 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+16:39:48.452 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+16:39:48.453 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+16:39:48.454 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully read from db
+16:39:48.454 [main] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Opening the connection to DB
+16:39:48.634 [main] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully opened the connection to DB
+16:39:48.635 [main] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Writing to db...
+16:39:48.674 [main] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully wrote to db and committed transaction
+16:39:48.674 [main] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Closing the connection to DB...
+16:39:48.675 [main] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully closed the connection to DB
+16:39:48.675 [main] INFO  c.i.a.app.service.EtlService - Successfully performed sync operation
+16:40:24.089 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 16160 (D:\IdeaProjects\app\target\app-0.0.1-SNAPSHOT.jar started by reald in D:\IdeaProjects\app)
+16:40:24.092 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:40:25.837 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 2.198 seconds (process running for 2.972)
+16:40:25.841 [main] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+16:40:25.841 [main] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: test3.xml
+16:40:25.852 [main] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Successfully read from xml file: test3.xml
+16:40:25.853 [main] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Starting processing info from xml
+16:40:25.853 [main] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Successfully processed info from xml
+16:40:25.853 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+16:40:25.854 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
+16:40:26.045 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+16:40:26.068 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+16:40:26.069 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+16:40:26.070 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully read from db
+16:40:26.070 [main] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Opening the connection to DB
+16:40:26.119 [main] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully opened the connection to DB
+16:40:26.120 [main] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Writing to db...
+16:40:26.130 [main] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully wrote to db and committed transaction
+16:40:26.131 [main] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Closing the connection to DB...
+16:40:26.131 [main] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully closed the connection to DB
+16:40:26.131 [main] INFO  c.i.a.app.service.EtlService - Successfully performed sync operation
+16:42:23.965 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 6844 (D:\IdeaProjects\app\target\app-0.0.1-SNAPSHOT.jar started by reald in D:\IdeaProjects\app)
+16:42:23.968 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:42:25.719 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 2.257 seconds (process running for 3.072)
+16:42:25.722 [main] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+16:42:25.723 [main] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: l.xml
+16:42:25.728 [main] ERROR c.i.a.a.e.reader.impl.XmlReaderImpl - Failed to read from xml file: l.xml
+16:42:52.705 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 15428 (D:\IdeaProjects\app\target\app-0.0.1-SNAPSHOT.jar started by reald in D:\IdeaProjects\app)
+16:42:52.708 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:43:19.506 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 15944 (D:\IdeaProjects\app\target\app-0.0.1-SNAPSHOT.jar started by reald in D:\IdeaProjects\app)
+16:43:19.508 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:44:26.191 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 4240 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+16:44:26.194 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:44:39.566 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication using Java 17.0.9 with PID 15940 (D:\IdeaProjects\app\target\classes started by reald in D:\IdeaProjects\app)
+16:44:39.569 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
+16:44:40.973 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 1.921 seconds (process running for 2.757)
+16:44:52.157 [http-nio-8090-exec-2] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+16:44:52.157 [http-nio-8090-exec-2] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: test3.xml
+16:45:48.510 [http-nio-8090-exec-4] INFO  c.i.a.app.service.EtlService - Performing sync operation: 
+16:45:48.510 [http-nio-8090-exec-4] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Starting reading from xml file: test3.xml
+16:45:48.512 [http-nio-8090-exec-4] INFO  c.i.a.a.e.reader.impl.XmlReaderImpl - Successfully read from xml file: test3.xml
+16:45:48.512 [http-nio-8090-exec-4] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Starting processing info from xml
+16:45:48.514 [http-nio-8090-exec-4] INFO  c.i.a.a.e.p.impl.ProcessorImpl - Successfully processed info from xml
+16:45:48.514 [http-nio-8090-exec-4] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
+16:45:48.514 [http-nio-8090-exec-4] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
+16:45:48.782 [http-nio-8090-exec-4] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully opened the connection to DB
+16:45:48.797 [http-nio-8090-exec-4] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Closing the connection to DB...
+16:45:48.798 [http-nio-8090-exec-4] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully closed the connection to DB
+16:45:48.798 [http-nio-8090-exec-4] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Successfully read from db
+16:45:48.798 [http-nio-8090-exec-4] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Opening the connection to DB
+16:45:48.852 [http-nio-8090-exec-4] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully opened the connection to DB
+16:45:48.852 [http-nio-8090-exec-4] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Writing to db...
+16:45:48.852 [http-nio-8090-exec-4] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully wrote to db and committed transaction
+16:45:48.852 [http-nio-8090-exec-4] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Closing the connection to DB...
+16:45:48.852 [http-nio-8090-exec-4] INFO  c.i.a.a.e.writer.impl.DbWriterImpl - Successfully closed the connection to DB
+16:45:48.852 [http-nio-8090-exec-4] INFO  c.i.a.app.service.EtlService - Successfully performed sync operation

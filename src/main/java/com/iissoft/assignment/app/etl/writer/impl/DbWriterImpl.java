@@ -2,8 +2,11 @@ package com.iissoft.assignment.app.etl.writer.impl;
 
 import com.iissoft.assignment.app.config.datasource.PostgresConfigProperties;
 import com.iissoft.assignment.app.etl.writer.DbWriter;
+import com.iissoft.assignment.app.exception.EtlWriterException;
 import com.iissoft.assignment.app.model.EmployeeDto;
 import com.iissoft.assignment.app.model.NaturalKey;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -11,6 +14,9 @@ import java.sql.*;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Имплементация интерфейса DbWriter, документация находится в интерфейсе
+ */
 @Component
 public class DbWriterImpl implements DbWriter {
     private static final String DELETE_EMPLOYEE_BY_NATURAL_KEY = "delete from employees where DepCode = ? and DepJob = ?";
@@ -19,17 +25,17 @@ public class DbWriterImpl implements DbWriter {
     private Connection connection;
     private PreparedStatement preparedStatement;
     private final PostgresConfigProperties postgresConfigProperties;
+    private static final Logger logger = LoggerFactory.getLogger(DbWriterImpl.class);
 
     @Autowired
     public DbWriterImpl(PostgresConfigProperties postgresConfigProperties) {
         this.postgresConfigProperties = postgresConfigProperties;
     }
 
-    // TODO: 18.11.2023 COMMIT AND ROLLBACK + CLOSE ALL RESOURCES
     @Override
     public void write(Map<NaturalKey, EmployeeDto> map, List<EmployeeDto> employeeDtos) {
         open();
-
+        logger.info("Writing to db...");
         try {
             connection.setAutoCommit(false);
             for (EmployeeDto employee : employeeDtos) {
@@ -40,22 +46,14 @@ public class DbWriterImpl implements DbWriter {
                     preparedStatement.setString(1, employee.getDepCode());
                     preparedStatement.setString(2, employee.getDepJob());
 
-                    // FIXME: 18.11.2023 todo TEST + LOGGING
-                    int rowsDeleted = preparedStatement.executeUpdate();
-                    if (rowsDeleted > 0) {
-                        System.out.println("Deleted rows: " + rowsDeleted);
-                    }
+                    preparedStatement.executeUpdate();
                 } else if (map.containsKey(naturalKey) && !map.get(naturalKey).equals(employee)) {
                     preparedStatement = connection.prepareStatement(UPDATE_EMPLOYEE_BY_NATURAL_KEY);
                     preparedStatement.setString(1, map.get(naturalKey).getDescription());
                     preparedStatement.setString(2, employee.getDepCode());
                     preparedStatement.setString(3, employee.getDepJob());
 
-                    // FIXME: 18.11.2023 todo TEST
-                    int rowsUpdated = preparedStatement.executeUpdate();
-                    if (rowsUpdated > 0) {
-                        System.out.println("Updated rows: " + rowsUpdated);
-                    }
+                    preparedStatement.executeUpdate();
 
                     map.remove(naturalKey);
                 } else if (map.containsKey(naturalKey) && map.get(naturalKey).equals(employee)) {
@@ -70,26 +68,24 @@ public class DbWriterImpl implements DbWriter {
                     preparedStatement.setString(2, entry.getKey().getDepJob());
                     preparedStatement.setString(3, entry.getValue().getDescription());
 
-                    // FIXME: 18.11.2023 todo TEST
-                    int rowsInserted = preparedStatement.executeUpdate();
-                    if (rowsInserted > 0) {
-                        System.out.println("Inserted rows: " + rowsInserted);
-                    }
+                    preparedStatement.executeUpdate();
                 }
             }
 
             connection.commit();
-        } catch (RuntimeException | SQLException e) {
+            logger.info("Successfully wrote to db and committed transaction");
+        } catch (SQLException e) {
             if (connection != null) {
                 try {
-                    System.err.print("Transaction is being rolled back");
+                    logger.info("Transaction is being rolled back");
                     connection.rollback();
                 } catch (SQLException ex) {
-                    throw new RuntimeException("cannot rollback");
+                    logger.error("Failed to rollback transaction", ex.getMessage());
+                    throw new EtlWriterException("Cannot rollback");
                 }
             }
-            e.printStackTrace();
-            throw new RuntimeException("Failed to write the next item to the result set", e);
+            logger.info("Failed to write to db", e.getMessage());
+            throw new EtlWriterException("Failed to write to db", e);
         } finally {
             close();
         }
@@ -97,18 +93,22 @@ public class DbWriterImpl implements DbWriter {
 
     @Override
     public void open() {
+        logger.info("Opening the connection to DB");
         try {
             Class.forName(postgresConfigProperties.getDriverClassName());
             connection = DriverManager.getConnection(postgresConfigProperties.getUrl(),
                     postgresConfigProperties.getUsername(), postgresConfigProperties.getPassword());
         } catch (ClassNotFoundException | SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException("Couldn't open the connection to DB", e);
+            logger.error("Couldn't open the connection to DB", e.getMessage());
+            throw new EtlWriterException("Couldn't open the connection to DB", e);
         }
+
+        logger.info("Successfully opened the connection to DB");
     }
 
     @Override
     public void close() {
+        logger.info("Closing the connection to DB...");
         try {
             if (preparedStatement != null) {
                 preparedStatement.close();
@@ -118,8 +118,9 @@ public class DbWriterImpl implements DbWriter {
                 connection.close();
             }
         } catch (SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException("Failed to close the JDBC connection and resources", e);
+            logger.error("Failed to close the JDBC connection and resources", e.getMessage());
+            throw new EtlWriterException("Failed to close the JDBC connection and resources", e);
         }
+        logger.info("Successfully closed the connection to DB");
     }
 }

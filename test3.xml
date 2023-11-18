@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <employees>
     <employee>
+        <depCode>AD</depCode>
+        <depJob>Receptionist</depJob>
+        <description>Reception</description>
+    </employee>
+    <employee>
         <depCode>HR</depCode>
         <depJob>Manager</depJob>
         <description>Hiring manager</description>
@@ -41,26 +46,8 @@
         <description>Assisting the engineer</description>
     </employee>
     <employee>
-        <depCode>IT</depCode>
-        <depJob>System Administrator</depJob>
-        <description>System administration tasks</description>
-    </employee>
-    <employee>
-        <depCode>AD</depCode>
-        <depJob>Receptionist</depJob>
-        <description>ReceptionBOMBACLAT</description>
-    </employee>
-    <employee>
-        <depCode>Tr</depCode>
-        <depJob>Av</depJob>
-        <description>Is</description>
-    </employee>
-    <employee>
-        <depCode>R</depCode>
-        <depJob>a</depJob>
-    </employee>
-    <employee>
-        <depCode>IT</depCode>
-        <depJob>Tester</depJob>
+        <depCode>PqR</depCode>
+        <depJob>Technqician</depJob>
+        <description>Assistiqng the engineer</description>
     </employee>
 </employees>

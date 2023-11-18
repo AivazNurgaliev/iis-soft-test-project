@@ -20,6 +20,3 @@ INSERT INTO Employees (DepCode, DepJob, Description) VALUES ('FN', 'Accountant',
 INSERT INTO Employees (DepCode, DepJob, Description) VALUES ('PR', 'Engineer', 'New product development and testing');
 INSERT INTO Employees (DepCode, DepJob, Description) VALUES ('PR', 'Technician', 'Assisting the engineer');
 INSERT INTO Employees (DepCode, DepJob, Description) VALUES ('AD', 'Receptionist', 'Reception');
-INSERT INTO Employees (DepCode, DepJob, Description) VALUES ('W', 'W', 'W');
-
-update employees set Description = null where DepCode = 'IT' and DepJob = 'Tester';
