@@ -9,7 +9,6 @@ public class DataSourceConfig {
     @Bean
     @ConfigurationProperties("spring.postgres-datasource")
     public PostgresConfigProperties postgresConfigProperties() {
-        var c = new PostgresConfigProperties();
         return new PostgresConfigProperties();
     }
 }
