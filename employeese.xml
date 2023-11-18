@@ -51,8 +51,16 @@
         <description>ReceptionBOMBACLAT</description>
     </employee>
     <employee>
+        <depCode>Tr</depCode>
+        <depJob>Av</depJob>
+        <description>Is</description>
+    </employee>
+    <employee>
+        <depCode>R</depCode>
+        <depJob>a</depJob>
+    </employee>
+    <employee>
         <depCode>IT</depCode>
         <depJob>Tester</depJob>
-        <description/>
     </employee>
 </employees>

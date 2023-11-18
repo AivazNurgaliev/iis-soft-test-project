@@ -15,9 +15,9 @@ import java.util.Map;
 public class DbWriterImpl implements DbWriter {
     private static final String DELETE_EMPLOYEE_BY_NATURAL_KEY = "delete from employees where DepCode = ? and DepJob = ?";
     private static final String UPDATE_EMPLOYEE_BY_NATURAL_KEY = "update employees set Description = ? where DepCode = ? and DepJob = ?";
+    private static final String INSERT_EMPLOYEE = "insert into employees (DepCode, DepJob, Description) values (?, ?, ?)";
     private Connection connection;
     private PreparedStatement preparedStatement;
-    private ResultSet resultSet;
     private final PostgresConfigProperties postgresConfigProperties;
 
     @Autowired
@@ -25,37 +25,27 @@ public class DbWriterImpl implements DbWriter {
         this.postgresConfigProperties = postgresConfigProperties;
     }
 
-    // TODO: 18.11.2023 COMMIT AND ROLLBACK 
+    // TODO: 18.11.2023 COMMIT AND ROLLBACK + CLOSE ALL RESOURCES
     @Override
     public void write(Map<NaturalKey, EmployeeDto> map, List<EmployeeDto> employeeDtos) {
         open();
 
-        for (EmployeeDto employee : employeeDtos) {
-            NaturalKey naturalKey = new NaturalKey(employee.getDepCode(), employee.getDepJob());
+        try {
+            connection.setAutoCommit(false);
+            for (EmployeeDto employee : employeeDtos) {
+                NaturalKey naturalKey = new NaturalKey(employee.getDepCode(), employee.getDepJob());
 
-            if(!map.containsKey(naturalKey)) {
-                //удаление
-                try {
+                if (!map.containsKey(naturalKey)) {
                     preparedStatement = connection.prepareStatement(DELETE_EMPLOYEE_BY_NATURAL_KEY);
                     preparedStatement.setString(1, employee.getDepCode());
                     preparedStatement.setString(2, employee.getDepJob());
 
-                    // FIXME: 18.11.2023 todo TEST
+                    // FIXME: 18.11.2023 todo TEST + LOGGING
                     int rowsDeleted = preparedStatement.executeUpdate();
-                    if(rowsDeleted > 0) {
+                    if (rowsDeleted > 0) {
                         System.out.println("Deleted rows: " + rowsDeleted);
                     }
-
-                } catch (SQLException e) {
-                    throw new RuntimeException(e);
-                }
-            } else if(map.containsKey(naturalKey) && !map.get(naturalKey).equals(employee)) {
-/*                System.out.println(employee.getDepCode());
-                System.out.println(employee.getDepJob());
-                System.out.println(employee.getDescription());
-                System.out.println(map.get(naturalKey).getDescription());
-                //обновление*/
-                try {
+                } else if (map.containsKey(naturalKey) && !map.get(naturalKey).equals(employee)) {
                     preparedStatement = connection.prepareStatement(UPDATE_EMPLOYEE_BY_NATURAL_KEY);
                     preparedStatement.setString(1, map.get(naturalKey).getDescription());
                     preparedStatement.setString(2, employee.getDepCode());
@@ -63,14 +53,45 @@ public class DbWriterImpl implements DbWriter {
 
                     // FIXME: 18.11.2023 todo TEST
                     int rowsUpdated = preparedStatement.executeUpdate();
-                    if(rowsUpdated > 0) {
+                    if (rowsUpdated > 0) {
                         System.out.println("Updated rows: " + rowsUpdated);
                     }
 
-                } catch (SQLException e) {
-                    throw new RuntimeException(e);
+                    map.remove(naturalKey);
+                } else if (map.containsKey(naturalKey) && map.get(naturalKey).equals(employee)) {
+                    map.remove(naturalKey);
                 }
             }
+
+            if (map.size() > 0) {
+                for (Map.Entry<NaturalKey, EmployeeDto> entry : map.entrySet()) {
+                    preparedStatement = connection.prepareStatement(INSERT_EMPLOYEE);
+                    preparedStatement.setString(1, entry.getKey().getDepCode());
+                    preparedStatement.setString(2, entry.getKey().getDepJob());
+                    preparedStatement.setString(3, entry.getValue().getDescription());
+
+                    // FIXME: 18.11.2023 todo TEST
+                    int rowsInserted = preparedStatement.executeUpdate();
+                    if (rowsInserted > 0) {
+                        System.out.println("Inserted rows: " + rowsInserted);
+                    }
+                }
+            }
+
+            connection.commit();
+        } catch (RuntimeException | SQLException e) {
+            if (connection != null) {
+                try {
+                    System.err.print("Transaction is being rolled back");
+                    connection.rollback();
+                } catch (SQLException ex) {
+                    throw new RuntimeException("cannot rollback");
+                }
+            }
+            e.printStackTrace();
+            throw new RuntimeException("Failed to write the next item to the result set", e);
+        } finally {
+            close();
         }
     }
 
@@ -89,10 +110,6 @@ public class DbWriterImpl implements DbWriter {
     @Override
     public void close() {
         try {
-            if (resultSet != null) {
-                resultSet.close();
-            }
-
             if (preparedStatement != null) {
                 preparedStatement.close();
             }
