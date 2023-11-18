@@ -11,6 +11,7 @@ import java.util.List;
 
 @Component
 public class DbReaderImpl implements DbReader {
+    private static final String SELECT_ALL_EMPLOYEES = "select * from employees";
     private Connection connection;
     private PreparedStatement preparedStatement;
     private ResultSet resultSet;
@@ -26,7 +27,7 @@ public class DbReaderImpl implements DbReader {
             Class.forName(postgresConfigProperties.getDriverClassName());
             connection = DriverManager.getConnection(postgresConfigProperties.getUrl(),
                     postgresConfigProperties.getUsername(), postgresConfigProperties.getPassword());
-            preparedStatement = connection.prepareStatement("select * from employees");
+            preparedStatement = connection.prepareStatement(SELECT_ALL_EMPLOYEES);
 
             resultSet = preparedStatement.executeQuery();
         } catch (ClassNotFoundException | SQLException e) {
@@ -48,13 +49,14 @@ public class DbReaderImpl implements DbReader {
                 item.setDescription(resultSet.getString("Description"));
                 employees.add(item);
             }
-            close();
-            return employees;
         } catch (SQLException e) {
-            close();
             e.printStackTrace();
             throw new RuntimeException("Failed to read the next item from the result set", e);
+        } finally {
+            close();
         }
+
+        return employees;
     }
 
     @Override

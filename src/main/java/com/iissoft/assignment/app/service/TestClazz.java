@@ -30,6 +30,7 @@ public class TestClazz {
 
     public void writeToXml() throws ParserConfigurationException, TransformerException {
         var list = test();
+        // FIXME: 17.11.2023 // TODO: 17.11.2023 добавить fileoutputstream в try-with-resources 
         FileOutputStream fos = null;
         try {
             fos = new FileOutputStream(new File("employeese.xml"));
