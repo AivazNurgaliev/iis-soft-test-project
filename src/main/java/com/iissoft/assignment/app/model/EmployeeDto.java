@@ -8,8 +8,7 @@ import java.util.Objects;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Employee {
-    private int id;
+public class EmployeeDto {
     private String depCode;
     private String depJob;
     private String description;
@@ -18,11 +17,10 @@ public class Employee {
     public boolean equals(Object o) {
         if(o == this)
             return true;
-        if(!(o instanceof Employee))
+        if(!(o instanceof EmployeeDto))
             return false;
-        Employee employee = (Employee) o;
+        EmployeeDto employee = (EmployeeDto) o;
 
-        boolean idEquals = this.id == employee.id;
         boolean depCodeEquals = (this.depCode == null && employee.depCode == null)
                 || (this.depCode != null && this.depCode.equals(employee.depCode));
         boolean depJobEquals = (this.depJob == null && employee.depJob == null)
@@ -30,11 +28,11 @@ public class Employee {
         boolean descriptionEquals = (this.description == null && employee.description == null)
                 || (this.description != null && this.description.equals(employee.description));
 
-        return idEquals && depCodeEquals && depJobEquals && descriptionEquals;
+        return depCodeEquals && depJobEquals && descriptionEquals;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, depCode, depJob, description);
+        return Objects.hash(depCode, depJob, description);
     }
 }

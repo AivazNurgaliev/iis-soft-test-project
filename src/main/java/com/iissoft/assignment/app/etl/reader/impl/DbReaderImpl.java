@@ -3,6 +3,7 @@ package com.iissoft.assignment.app.etl.reader.impl;
 import com.iissoft.assignment.app.config.datasource.PostgresConfigProperties;
 import com.iissoft.assignment.app.etl.reader.DbReader;
 import com.iissoft.assignment.app.model.Employee;
+import com.iissoft.assignment.app.model.EmployeeDto;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
@@ -27,9 +28,6 @@ public class DbReaderImpl implements DbReader {
             Class.forName(postgresConfigProperties.getDriverClassName());
             connection = DriverManager.getConnection(postgresConfigProperties.getUrl(),
                     postgresConfigProperties.getUsername(), postgresConfigProperties.getPassword());
-            preparedStatement = connection.prepareStatement(SELECT_ALL_EMPLOYEES);
-
-            resultSet = preparedStatement.executeQuery();
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
             throw new RuntimeException("Couldn't open the connection to DB", e);
@@ -37,13 +35,15 @@ public class DbReaderImpl implements DbReader {
     }
 
     @Override
-    public List<Employee> read() {
+    public List<EmployeeDto> read() {
         open();
-        List<Employee> employees = new ArrayList<>();
+        List<EmployeeDto> employees = new ArrayList<>();
         try {
+            preparedStatement = connection.prepareStatement(SELECT_ALL_EMPLOYEES);
+            resultSet = preparedStatement.executeQuery();
+
             while (resultSet.next()) {
-                Employee item = new Employee();
-                item.setId(resultSet.getInt("ID"));
+                EmployeeDto item = new EmployeeDto();
                 item.setDepCode(resultSet.getString("DepCode"));
                 item.setDepJob(resultSet.getString("DepJob"));
                 item.setDescription(resultSet.getString("Description"));
