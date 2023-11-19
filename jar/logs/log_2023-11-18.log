@@ -1,7 +1,0 @@
-19:51:23.215 [main] INFO  c.i.a.app.IisSoftApplication - Starting IisSoftApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 17552 (D:\IdeaProjects\app\jar\app-0.0.1-SNAPSHOT.jar started by reald in D:\IdeaProjects\app\jar)
-19:51:23.219 [main] INFO  c.i.a.app.IisSoftApplication - No active profile set, falling back to 1 default profile: "default"
-19:51:25.840 [main] INFO  c.i.a.app.IisSoftApplication - Started IisSoftApplication in 3.277 seconds (process running for 4.24)
-19:51:25.846 [main] INFO  c.i.a.a.service.impl.EtlServiceImpl - Performing data upload to xml: kanye.xml
-19:51:25.846 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - reading from db...
-19:51:25.848 [main] INFO  c.i.a.a.e.reader.impl.DbReaderImpl - Opening the connection to DB
-19:51:26.181 [main] ERROR c.i.a.a.e.reader.impl.DbReaderImpl - Couldn't open the connection to DB

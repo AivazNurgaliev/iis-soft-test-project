@@ -34,6 +34,7 @@ public class DbWriterImpl implements DbWriter {
 
     @Override
     public void write(Map<NaturalKey, EmployeeDto> map, List<EmployeeDto> employeeDtos) {
+        // TODO: 18.11.2023 в ифах - сделать разные методы аддДБ,  updateDb
         open();
         logger.info("Writing to db...");
         try {
@@ -42,18 +43,9 @@ public class DbWriterImpl implements DbWriter {
                 NaturalKey naturalKey = new NaturalKey(employee.getDepCode(), employee.getDepJob());
 
                 if (!map.containsKey(naturalKey)) {
-                    preparedStatement = connection.prepareStatement(DELETE_EMPLOYEE_BY_NATURAL_KEY);
-                    preparedStatement.setString(1, employee.getDepCode());
-                    preparedStatement.setString(2, employee.getDepJob());
-
-                    preparedStatement.executeUpdate();
+                    deleteEmployee(employee);
                 } else if (map.containsKey(naturalKey) && !map.get(naturalKey).equals(employee)) {
-                    preparedStatement = connection.prepareStatement(UPDATE_EMPLOYEE_BY_NATURAL_KEY);
-                    preparedStatement.setString(1, map.get(naturalKey).getDescription());
-                    preparedStatement.setString(2, employee.getDepCode());
-                    preparedStatement.setString(3, employee.getDepJob());
-
-                    preparedStatement.executeUpdate();
+                    updateEmployee(map, employee, naturalKey);
 
                     map.remove(naturalKey);
                 } else if (map.containsKey(naturalKey) && map.get(naturalKey).equals(employee)) {
@@ -63,12 +55,7 @@ public class DbWriterImpl implements DbWriter {
 
             if (map.size() > 0) {
                 for (Map.Entry<NaturalKey, EmployeeDto> entry : map.entrySet()) {
-                    preparedStatement = connection.prepareStatement(INSERT_EMPLOYEE);
-                    preparedStatement.setString(1, entry.getKey().getDepCode());
-                    preparedStatement.setString(2, entry.getKey().getDepJob());
-                    preparedStatement.setString(3, entry.getValue().getDescription());
-
-                    preparedStatement.executeUpdate();
+                    insertEmployee(entry);
                 }
             }
 
@@ -90,6 +77,7 @@ public class DbWriterImpl implements DbWriter {
             close();
         }
     }
+
 
     @Override
     public void open() {
@@ -123,4 +111,32 @@ public class DbWriterImpl implements DbWriter {
         }
         logger.info("Successfully closed the connection to DB");
     }
+
+    private void insertEmployee(Map.Entry<NaturalKey, EmployeeDto> entry) throws SQLException {
+        preparedStatement = connection.prepareStatement(INSERT_EMPLOYEE);
+        preparedStatement.setString(1, entry.getKey().getDepCode());
+        preparedStatement.setString(2, entry.getKey().getDepJob());
+        preparedStatement.setString(3, entry.getValue().getDescription());
+
+        preparedStatement.executeUpdate();
+    }
+
+    private void updateEmployee(Map<NaturalKey, EmployeeDto> map, EmployeeDto employee,
+                                NaturalKey naturalKey) throws SQLException {
+        preparedStatement = connection.prepareStatement(UPDATE_EMPLOYEE_BY_NATURAL_KEY);
+        preparedStatement.setString(1, map.get(naturalKey).getDescription());
+        preparedStatement.setString(2, employee.getDepCode());
+        preparedStatement.setString(3, employee.getDepJob());
+
+        preparedStatement.executeUpdate();
+    }
+
+    private void deleteEmployee(EmployeeDto employee) throws SQLException {
+        preparedStatement = connection.prepareStatement(DELETE_EMPLOYEE_BY_NATURAL_KEY);
+        preparedStatement.setString(1, employee.getDepCode());
+        preparedStatement.setString(2, employee.getDepJob());
+
+        preparedStatement.executeUpdate();
+    }
+
 }

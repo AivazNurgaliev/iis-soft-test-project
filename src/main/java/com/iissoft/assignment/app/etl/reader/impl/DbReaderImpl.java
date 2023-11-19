@@ -7,6 +7,7 @@ import com.iissoft.assignment.app.model.Employee;
 import com.iissoft.assignment.app.model.EmployeeDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;
@@ -26,6 +27,7 @@ public class DbReaderImpl implements DbReader {
     private final PostgresConfigProperties postgresConfigProperties;
     private static final Logger logger = LoggerFactory.getLogger(DbReaderImpl.class);
 
+    @Autowired
     public DbReaderImpl(PostgresConfigProperties postgresConfigProperties) {
         this.postgresConfigProperties = postgresConfigProperties;
     }
@@ -47,19 +49,15 @@ public class DbReaderImpl implements DbReader {
 
     @Override
     public List<EmployeeDto> read() {
-        logger.info("reading from db...");
         open();
+        logger.info("reading from db...");
         List<EmployeeDto> employees = new ArrayList<>();
         try {
             preparedStatement = connection.prepareStatement(SELECT_ALL_EMPLOYEES);
             resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
-                EmployeeDto item = new EmployeeDto();
-                item.setDepCode(resultSet.getString("DepCode"));
-                item.setDepJob(resultSet.getString("DepJob"));
-                item.setDescription(resultSet.getString("Description"));
-                employees.add(item);
+                employees.add(getEmployeeDto());
             }
         } catch (SQLException e) {
             logger.error("Failed to read from the result set", e.getMessage());
@@ -69,6 +67,14 @@ public class DbReaderImpl implements DbReader {
         }
         logger.info("Successfully read from db");
         return employees;
+    }
+
+    private EmployeeDto getEmployeeDto() throws SQLException {
+        EmployeeDto item = new EmployeeDto();
+        item.setDepCode(resultSet.getString("DepCode"));
+        item.setDepJob(resultSet.getString("DepJob"));
+        item.setDescription(resultSet.getString("Description"));
+        return item;
     }
 
     @Override

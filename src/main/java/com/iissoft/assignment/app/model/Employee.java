@@ -30,6 +30,7 @@ public class Employee {
         boolean descriptionEquals = (this.description == null && employee.description == null)
                 || (this.description != null && this.description.equals(employee.description));
 
+        
         return idEquals && depCodeEquals && depJobEquals && descriptionEquals;
     }
 

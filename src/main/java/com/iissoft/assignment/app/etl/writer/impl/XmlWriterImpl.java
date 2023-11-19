@@ -1,7 +1,6 @@
 package com.iissoft.assignment.app.etl.writer.impl;
 
 import com.iissoft.assignment.app.etl.writer.XmlWriter;
-import com.iissoft.assignment.app.model.Employee;
 import com.iissoft.assignment.app.model.EmployeeDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -54,22 +53,26 @@ public class XmlWriterImpl implements XmlWriter {
             Element employeeElem = doc.createElement("employee");
             rootElement.appendChild(employeeElem);
 
-            Element depCodeElem = doc.createElement("depCode");
-            depCodeElem.setTextContent(employee.getDepCode());
-            employeeElem.appendChild(depCodeElem);
-
-            Element depJobElem = doc.createElement("depJob");
-            depJobElem.setTextContent(employee.getDepJob());
-            employeeElem.appendChild(depJobElem);
-
-            String description = employee.getDescription();
-            if(description != null) {
-                Element descriptionElem = doc.createElement("description");
-                descriptionElem.setTextContent(employee.getDescription());
-                employeeElem.appendChild(descriptionElem);
-            }
+            appendEmployeeToXML(doc, employee, employeeElem);
         }
 
         return doc;
+    }
+
+    private static void appendEmployeeToXML(Document doc, EmployeeDto employee, Element employeeElem) {
+        Element depCodeElem = doc.createElement("depCode");
+        depCodeElem.setTextContent(employee.getDepCode());
+        employeeElem.appendChild(depCodeElem);
+
+        Element depJobElem = doc.createElement("depJob");
+        depJobElem.setTextContent(employee.getDepJob());
+        employeeElem.appendChild(depJobElem);
+
+        String description = employee.getDescription();
+        if(description != null) {
+            Element descriptionElem = doc.createElement("description");
+            descriptionElem.setTextContent(employee.getDescription());
+            employeeElem.appendChild(descriptionElem);
+        }
     }
 }

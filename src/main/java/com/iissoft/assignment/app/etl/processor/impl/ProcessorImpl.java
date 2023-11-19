@@ -17,7 +17,6 @@ import java.util.Map;
  */
 @Component
 public class ProcessorImpl implements Processor {
-
     private static final Logger logger = LoggerFactory.getLogger(ProcessorImpl.class);
     @Override
     public Map<NaturalKey, EmployeeDto> process(List<EmployeeDto> employees) {
@@ -27,9 +26,9 @@ public class ProcessorImpl implements Processor {
         for (EmployeeDto employee : employees) {
             NaturalKey naturalKey = new NaturalKey(employee.getDepCode(), employee.getDepJob());
             if(res.containsKey(naturalKey)) {
-                logger.error("Duplicate key: " + naturalKey + " in xml");
-                throw new KeyDuplicationException("Duplicate key: " + naturalKey.getDepCode()
+                logger.error("Duplicate key: " + naturalKey.getDepCode()
                         + " " + naturalKey.getDepJob() + " in xml");
+                throw new KeyDuplicationException(naturalKey);
             }
 
             res.put(naturalKey, employee);

@@ -1,8 +1,13 @@
 package com.iissoft.assignment.app.service.impl;
 
+import com.iissoft.assignment.app.etl.processor.Processor;
 import com.iissoft.assignment.app.etl.processor.impl.ProcessorImpl;
+import com.iissoft.assignment.app.etl.reader.DbReader;
+import com.iissoft.assignment.app.etl.reader.XmlReader;
 import com.iissoft.assignment.app.etl.reader.impl.DbReaderImpl;
 import com.iissoft.assignment.app.etl.reader.impl.XmlReaderImpl;
+import com.iissoft.assignment.app.etl.writer.DbWriter;
+import com.iissoft.assignment.app.etl.writer.XmlWriter;
 import com.iissoft.assignment.app.etl.writer.impl.DbWriterImpl;
 import com.iissoft.assignment.app.etl.writer.impl.XmlWriterImpl;
 import com.iissoft.assignment.app.exception.EtlWriterException;
@@ -29,11 +34,11 @@ import java.util.Map;
  */
 @Service
 public class EtlServiceImpl implements EtlService {
-    private final DbReaderImpl dbReader;
-    private final DbWriterImpl dbWriter;
-    private final XmlWriterImpl xmlWriter;
-    private final XmlReaderImpl xmlReader;
-    private final ProcessorImpl processor;
+    private final DbReader dbReader;
+    private final DbWriter dbWriter;
+    private final XmlWriter xmlWriter;
+    private final XmlReader xmlReader;
+    private final Processor processor;
     private static final Logger logger = LoggerFactory.getLogger(EtlServiceImpl.class);
     @Autowired
     public EtlServiceImpl(DbReaderImpl dbReader, DbWriterImpl dbWriter,

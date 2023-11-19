@@ -34,33 +34,13 @@ public class XmlReaderImpl implements XmlReader {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         List<EmployeeDto> employees = new ArrayList<>();
         try {
-            //Позволяет обрабатывать XML безопасно
-            dbf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
-
-            DocumentBuilder docBuilder = dbf.newDocumentBuilder();
-            Document doc = docBuilder.parse(file);
-
-            doc.getDocumentElement().normalize();
-
-            NodeList nodeList = doc.getElementsByTagName("employee");
+            NodeList nodeList = getNodeList(file, dbf);
 
             for (int i = 0; i < nodeList.getLength(); i++) {
                 Node node = nodeList.item(i);
 
                 if (node.getNodeType() == Node.ELEMENT_NODE) {
-                    EmployeeDto employee = new EmployeeDto();
-                    Element element = (Element) node;
-
-                    employee.setDepCode(element.getElementsByTagName("depCode").item(0).getTextContent());
-                    employee.setDepJob(element.getElementsByTagName("depJob").item(0).getTextContent());
-
-                    if(element.getElementsByTagName("description").item(0) != null) {
-                        employee.setDescription(element.getElementsByTagName("description").item(0).getTextContent());
-                    } else {
-                        employee.setDescription(null);
-                    }
-
-                    employees.add(employee);
+                    employees.add(getEmployeeDto((Element) node));
                 }
             }
 
@@ -71,5 +51,35 @@ public class XmlReaderImpl implements XmlReader {
         }
 
         return employees;
+    }
+
+    private static NodeList getNodeList(File file, DocumentBuilderFactory dbf)
+            throws ParserConfigurationException, SAXException, IOException {
+        //Позволяет обрабатывать XML безопасно
+        dbf.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);
+
+        DocumentBuilder docBuilder = dbf.newDocumentBuilder();
+        Document doc = docBuilder.parse(file);
+
+        doc.getDocumentElement().normalize();
+
+        NodeList nodeList = doc.getElementsByTagName("employee");
+
+        return nodeList;
+    }
+
+    private static EmployeeDto getEmployeeDto(Element node) {
+        EmployeeDto employee = new EmployeeDto();
+        Element element = node;
+
+        employee.setDepCode(element.getElementsByTagName("depCode").item(0).getTextContent());
+        employee.setDepJob(element.getElementsByTagName("depJob").item(0).getTextContent());
+
+        if(element.getElementsByTagName("description").item(0) != null) {
+            employee.setDescription(element.getElementsByTagName("description").item(0).getTextContent());
+        } else {
+            employee.setDescription(null);
+        }
+        return employee;
     }
 }
